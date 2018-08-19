@@ -7,23 +7,22 @@
           img.logo__part(src="~assets/combined_Shape.svg", alt="Wallet: InventiStudio recruitment task")
           img.logo__name(src="~assets/name.svg", alt="Wallet: InventiStudio recruitment task")
         SignOut.col-1
-      Navbar
-      Landing
+        Landing
 </template>
 
 <script>
-  import Navbar from 'components/Navbar'
-  import SignOut from 'components/SignOut'
-  import Landing from './Landing'
+import Navbar from 'components/Navbar'
+import SignOut from 'components/SignOut'
+import Landing from './Landing/Landing'
 
-  export default {
-    name: 'Wallet',
-    components: {
-      Landing,
-      Navbar,
-      SignOut,
-    },
-  }
+export default {
+  name: 'Wallet',
+  components: {
+    Landing,
+    Navbar,
+    SignOut,
+  },
+}
 </script>
 <style lang="sass" scoped>
 .container
@@ -33,6 +32,7 @@
 
   &__part
     width: 20%
+    
   &__name
     margin-left: 29px
     width: 86%

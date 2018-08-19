@@ -30,7 +30,7 @@ const actions = {
       api.setHeader('x-auth-token', apiToken)
       if (!lsToken) {
         commit('LOGIN')
-        router.push({ name: 'Wallet' })
+        router.push({ path: 'transactions' })
       }
     } catch (err) {
       if (lsToken) ls.remove(STORAGE_AUTH_TOKEN)

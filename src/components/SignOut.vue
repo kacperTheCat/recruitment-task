@@ -24,9 +24,11 @@
 
 <style lang="sass" scoped>
 @import "~styles/vars/fonts"
+@import "~styles/vars/colors"
 
 .sign-out
   margin-left: 8px
+  color: $c-black
   font-family: $ff-roboto
   font-weight: $fw-black
 </style>

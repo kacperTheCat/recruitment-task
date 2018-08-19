@@ -1,15 +1,35 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import store from 'src/store'
-
+import Transactions from 'src/views/Wallet/WalletComponents/Transactions'
+import Withdrawals from 'src/views/Wallet/WalletComponents/Withdrawals'
+import Additions from 'src/views/Wallet/WalletComponents/Additions'
+import Wallet from 'src/views/Wallet/Wallet'
 
 Vue.use(Router)
+
 
 const routes = [
   {
     path: '/wallet',
     name: 'Wallet',
-    component: () => import('src/views/Wallet'),
+    component: Wallet,
+    children: [
+      {
+        path: '/transactions',
+        name: 'transactions',
+        component: Transactions,
+      },
+      {
+        path: '/withdrawals',
+        name: 'withdrawals',
+        component: Withdrawals,
+      },
+      {
+        path: '/additions',
+        name: 'additions',
+        component: Additions,
+      }],
   },
   {
     path: '/',
@@ -19,7 +39,6 @@ const routes = [
 ]
 
 const router = new Router({
-  mode: 'history',
   routes,
 })
 
