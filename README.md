@@ -41,7 +41,9 @@ Kamil & Piotrek, [InventiStudio](https://inventi.studio)
 - [ ] As a user I am able to see all my transactions.
 	- create sub-router +
 	- create wallet-nav +
-	- create Transactions component+
+	- create Transactions component
+		- create reusable table component
+		- call all transactions
 	- display all transactions
 	- add css
 - [ ] As a user I am able to see all my withdrawals (transactions where I took money out of my wallet).
