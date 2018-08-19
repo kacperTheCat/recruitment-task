@@ -39,6 +39,9 @@ Kamil & Piotrek, [InventiStudio](https://inventi.studio)
 	- Add css (pixel perfect scale 0.95)+
 	- Create linters config+
 - [ ] As a user I am able to see all my transactions.
+	- create sub-router +
+	- create wallet-nav +
+	- create Transactions component+
 	- display all transactions
 	- add css
 - [ ] As a user I am able to see all my withdrawals (transactions where I took money out of my wallet).
